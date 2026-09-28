@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entre Nosotros | Wedding Planner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Se añade Montserrat para el subtítulo y se mantiene Playfair Display -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+<style>
+/* Se ajustan ligeramente los colores para coincidir más con las imágenes aportadas */
+:root{--beige:#bb9e83;--blanco:#f5ead6}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;width:100%}
+body{min-height:100vh;background:var(--beige);color:var(--blanco);font-family:'Playfair Display',Georgia,serif;display:flex;align-items:center;justify-content:center;text-align:center;-webkit-font-smoothing:antialiased}
+main{width:min(90%,700px);padding:48px 24px}
+
+/* Estilos para el logo */
+.logo {width: 140px; height: auto; margin: 0 auto 30px; display: block;}
+
+.brand{font-size:clamp(3.5rem,12vw,6.5rem);line-height:1.1;font-weight:400;letter-spacing:0;margin:0 0 20px}
+/* Se cambia la fuente del subtítulo a sans-serif delgada, eliminando el uppercase forzado */
+.subtitle{font-family:'Montserrat', sans-serif; font-weight:300; font-size:clamp(1.2rem,3.5vw,1.6rem); letter-spacing:.05em; margin:0 0 40px}
+
+.message{font-size:clamp(1.45rem,4vw,2rem);line-height:1.45;margin:0 auto 18px;max-width:560px; display: none;} /* Oculto el mensaje original para centrar la atención en el diseño de la imagen 1, puedes borrar el 'display: none;' si quieres que vuelva a aparecer */
+
+/* Se elimina la cursiva (italic) para coincidir con la imagen 1 */
+.slogan{font-size:clamp(1.4rem,3.5vw,1.8rem);line-height:1.5;margin:0 auto 54px; font-weight:400}
+
+.links{display:flex;justify-content:center;align-items:center;gap:28px;flex-wrap:wrap}
+.link{color:var(--blanco);text-decoration:none;display:inline-flex;align-items:center;gap:9px;font-size:1rem;transition:opacity .2s; font-family:'Montserrat', sans-serif; font-weight: 300;}
+.link:hover,.link:focus-visible{opacity:.7}
+.icon{width:21px;height:21px;display:block;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+
+@media(max-width:480px){main{padding:36px 20px}.subtitle{margin-bottom:40px}.slogan{margin-bottom:44px}.links{gap:18px}.logo{width:110px}}
+</style>
+</head>
+<body><main>
+<!-- Etiqueta de imagen para el logo. Asegúrate de tener "2.jpg" en la misma carpeta que tu index.html -->
+<img src="2.jpg" alt="Logo Entre Nosotros" class="logo">
+
+<!-- Textos adaptados exactamente a la imagen 1 -->
+<h1 class="brand">Entre<br>Nosotros</h1>
+<p class="subtitle">Wedding Planner</p>
+<p class="message">Estamos preparando algo muy especial.</p>
+<p class="slogan">Que cada detalle<br>hable del Amor</p>
+
+<nav class="links" aria-label="Contacto y redes sociales">
+<a class="link" href="mailto:hola@bodasentrenosotros.com"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M4 7l8 6 8-6"/></svg>hola@bodasentrenosotros.com</a>
+<a class="link" href="https://www.instagram.com/bodas.entrenosotros/" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.7" r="1"/></svg>@bodas.entrenosotros</a>
+</nav></main></body></html>
