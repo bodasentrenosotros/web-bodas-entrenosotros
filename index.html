@@ -22,7 +22,21 @@ main{width:min(90%,700px);padding:48px 24px}
 /* Se cambia la fuente del subtítulo a sans-serif delgada, eliminando el uppercase forzado */
 .subtitle{font-family:'Montserrat', sans-serif; font-weight:300; font-size:clamp(1.2rem,3.5vw,1.6rem); letter-spacing:.05em; margin:0 0 40px}
 
-.message{font-size:clamp(1.45rem,4vw,2rem);line-height:1.45;margin:0 auto 18px;max-width:560px; display: none;} /* Oculto el mensaje original para centrar la atención en el diseño de la imagen 1, puedes borrar el 'display: none;' si quieres que vuelva a aparecer */
+/* Mensaje de lanzamiento */
+.message{
+font-family:'Montserrat', sans-serif;
+font-weight:300;
+font-size:clamp(1rem,2.8vw,1.25rem);
+line-height:1.6;
+letter-spacing:.03em;
+margin:0 auto 42px;
+max-width:560px;
+}
+
+.message span{
+font-size:.8em;
+letter-spacing:.08em;
+}
 
 /* Se elimina la cursiva (italic) para coincidir con la imagen 1 */
 .slogan{font-size:clamp(1.4rem,3.5vw,1.8rem);line-height:1.5;margin:0 auto 54px; font-weight:400}
@@ -42,7 +56,7 @@ main{width:min(90%,700px);padding:48px 24px}
 <!-- Textos adaptados exactamente a la imagen 1 -->
 <h1 class="brand">Entre<br>Nosotros</h1>
 <p class="subtitle">Wedding Planner</p>
-<p class="message">Estamos preparando algo muy especial.</p>
+<p class="message"><span>Muy pronto…</span><br>Estamos creando algo muy especial.</p>
 <p class="slogan">Que cada detalle<br>hable del Amor</p>
 
 <nav class="links" aria-label="Contacto y redes sociales">
